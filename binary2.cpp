@@ -11,25 +11,19 @@ int main(){
     while (l <= h && !found)
     {
         m=l+(h-1)/2;
-        if (x==arr[m])
+
+        if (x == arr[m])
         {
             found=true;
-        } if (x < arr[m])
+            cout<<"data ditemukan ";
+        } else if (x < arr[m])
         {
             h = m-1;
         } else if ( x > arr [m]){
             l = m + 1;
         }
         
-        
     }
-    
-
-
-
-
-
-
 
     return 0;
 }
